@@ -46,10 +46,13 @@ public class HomeActivity extends AppCompatActivity {
         initView();
         initBanner();
         initData();
-        initListener();
+
+
     }
 
-    private void initListener() {
+
+
+   private void initListener() {
         adapter.setListener(new NewsBenAdapter.Listener() {
             @Override
             public void ItemListener(int position) {
@@ -78,6 +81,7 @@ public class HomeActivity extends AppCompatActivity {
         });
         banner.start();
 
+
     }
 
 
@@ -105,6 +109,7 @@ public class HomeActivity extends AppCompatActivity {
                         recycler.setLayoutManager(manager);
                         recycler.setAdapter(adapter);
                         header.attachTo(recycler,true);
+                        initListener();
                     }
                 });
             }

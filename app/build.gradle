@@ -32,5 +32,12 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.3.2'
     compile 'com.youth.banner:banner:1.4.9'
     compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
-
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation files('libs/SocialSDK_Sina_Simplify.jar')
+    implementation files('libs/umeng_shareboard_widget.jar')
+    implementation files('libs/umeng_social_api.jar')
+    implementation files('libs/umeng_social_net.jar')
+    implementation files('libs/umeng_social_shareboard.jar')
+    implementation files('libs/umeng_social_shareview.jar')
+    implementation files('libs/umeng_social_tool.jar')
 }
