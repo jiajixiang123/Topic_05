@@ -73,7 +73,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void displayImage(Context context, Object path, ImageView imageView) {
                 Picasso.with(HomeActivity.this).load((Integer) path).into(imageView);
-            //胜多负少的方式
+
             }
         });
         banner.start();
